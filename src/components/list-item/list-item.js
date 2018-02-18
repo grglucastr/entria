@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-
+import './list-item.css';
 
 class ListItem  extends Component{
     render(){
