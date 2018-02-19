@@ -1,12 +1,29 @@
 import React, {Component} from 'react';
 import './list-item.css';
+import PropTypes from 'prop-types';
 
 import ListItemDetails from '../list-item-details/list-item-details'; 
 
 class ListItem  extends Component{
     render(){
-        return(<div>List Item Component ---> Render Method<br/> <ListItemDetails/></div>);
+        return(<div className='BackgroundListItem'>
+                 <p className='ListItemTitle'> {this.props.title} </p>
+                 <p className='ListItemContent'> {this.props.content} </p>
+               </div>);
     }
+}
+
+
+//Props validation to Data Type
+ListItem.propTypes = {
+    title: PropTypes.string,
+    content: PropTypes.string
+}
+
+//Default values to Props
+ListItem.defaultProps = {
+    title: 'Item Title',
+    content: 'Content of list item ' 
 }
 
 export default ListItem;

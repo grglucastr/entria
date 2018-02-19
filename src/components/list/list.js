@@ -11,6 +11,7 @@ class List  extends Component{
             <div  className="BackgroundList">
                 <p className="ListTitle">{this.props.title}</p>
                 <ListItem/>
+                <ListItem/>
             </div>
         );
     }

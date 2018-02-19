@@ -1,0 +1,20 @@
+
+.BackgroundListItem{
+    background: rgb(64, 121, 139);
+    padding: 0.9%;
+    margin-top: 1%;
+    display: block;
+    border-radius: 5px;
+}
+
+.ListItemTitle{
+    text-align: left;
+    color: rgb(194, 186, 186);
+    font-size: 18px;
+}
+
+.ListItemContent{
+    text-align: justify;
+    color: lightgray;
+    font-size: 12px;
+}
