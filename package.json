@@ -8,16 +8,17 @@
     "react-scripts": "0.9.5"
   },
   "devDependencies": {
-    "@storybook/react": "^3.3.13",
     "@storybook/addon-actions": "^3.3.13",
     "@storybook/addon-links": "^3.3.13",
     "@storybook/addons": "^3.3.13",
-    "babel-core": "^6.26.0"
+    "@storybook/react": "^3.3.13",
+    "babel-core": "^6.26.0",
+    "jest": "^22.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
