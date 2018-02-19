@@ -2,6 +2,7 @@
   "name": "entria",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://matheusmonte.github.io/entria",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -13,6 +14,7 @@
     "@storybook/addons": "^3.3.13",
     "@storybook/react": "^3.3.13",
     "babel-core": "^6.26.0",
+    "gh-pages": "^1.1.0",
     "jest": "^22.3.0"
   },
   "scripts": {
@@ -21,6 +23,7 @@
     "test": "jest",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy": "gh-pages -d build"
   }
 }
