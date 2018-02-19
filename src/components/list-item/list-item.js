@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import './list-item.css';
 
 import ListItemDetails from '../list-item-details/list-item-details'; 

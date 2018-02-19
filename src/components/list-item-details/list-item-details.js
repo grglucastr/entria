@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import './list-item-details.css';
 
 class ListItemDetails  extends Component{
