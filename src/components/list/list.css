@@ -1,0 +1,12 @@
+
+.BackgroundList{
+    background: lightblue;
+    margin: 2.5%;
+    padding: 2.5%;
+    display: inline-block;
+}
+
+.ListTitle{
+    text-align: center;
+    color: white;
+}

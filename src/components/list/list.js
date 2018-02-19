@@ -8,19 +8,24 @@ class List  extends Component{
 
     render(){
         return(
-            <div>List Component ---> Render Method<br/> <ListItem/></div>
+            <div  className="BackgroundList">
+                <p className="ListTitle">{this.props.title}</p>
+                <ListItem/>
+            </div>
         );
     }
 }
 
 //Props validation to Data Type
 List.propTypes = {
-    source: PropTypes.array
+    source: PropTypes.array,
+    title : PropTypes.string
 }
 
 //Default values to Props
 List.defaultProps = {
-    source: []
+    source: [],
+    title: 'A list sample using react' 
 }
 
 export default List;
