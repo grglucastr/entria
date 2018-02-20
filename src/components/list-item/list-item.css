@@ -10,11 +10,11 @@
 .ListItemTitle{
     text-align: left;
     color: rgb(194, 186, 186);
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .ListItemContent{
     text-align: justify;
     color: lightgray;
-    font-size: 12px;
+    font-size: 1.2rem;
 }

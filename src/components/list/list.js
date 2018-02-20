@@ -1,17 +1,19 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './list.css';
-
 import ListItem from '../list-item/list-item'; 
 
 class List  extends Component{
-
+    componentWillMount(){
+        this
+    }
     render(){
         return(
             <div  className="BackgroundList">
                 <p className="ListTitle">{this.props.title}</p>
-                <ListItem/>
-                <ListItem/>
+                {this.props.source.map((listitem) =>
+                        <ListItem key={listitem.toString()} title={listitem.title} content={listitem.content}/>
+                    )}
             </div>
         );
     }
@@ -28,5 +30,6 @@ List.defaultProps = {
     source: [],
     title: 'A list sample using react' 
 }
+
 
 export default List;
