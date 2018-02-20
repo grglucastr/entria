@@ -6,7 +6,7 @@ import ListItemDetails from '../list-item-details/list-item-details';
 
 class ListItem  extends Component{
     handleClick = () => {
-        alert('You clicked a list Item ' +  this.props.title);
+        alert('You clicked a list Item ' +  this.props.adtionalInformation.date  );
     }
 
     render(){

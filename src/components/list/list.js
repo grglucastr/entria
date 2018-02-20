@@ -12,7 +12,7 @@ class List  extends Component{
             <div  className="BackgroundList">
                 <p className="ListTitle">{this.props.title}</p>
                 {this.props.source.map((listitem) =>
-                        <ListItem key={listitem.toString()} title={listitem.title} content={listitem.content}/>
+                        <ListItem key={listitem.toString()} title={listitem.title} content={listitem.content} adtionalInformation = {listitem.adtionalInformation}/>
                     )}
             </div>
         );
