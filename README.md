@@ -4,10 +4,10 @@ This repo will implement some list sample using react to a code challenge.
 
 The goals are:
 
-* Create a List and Detail view for some model (e.g: todos, posts, products)
-* it should use React
-* it should use inline style
-* it should be open sourced on your github repo
+* Create a List and Detail view for some model (e.g: todos, posts, products) [ON GOING]
+* it should use React [OK]
+* it should use inline style [OK]
+* it should be open sourced on your github repo [OK]
 
 Some extras can be implement:
 
