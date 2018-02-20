@@ -5,15 +5,26 @@ import PropTypes from 'prop-types';
 import ListItemDetails from '../list-item-details/list-item-details'; 
 
 class ListItem  extends Component{
+    componentWillMount(){
+        this.setState({expanded : false});
+    }
     handleClick = () => {
+        this.setState({expanded : !this.state.expanded});
         alert('You clicked a list Item ' +  this.props.adtionalInformation.date  );
     }
-
-    render(){
+    renderNormalState(){
         return(<div className='BackgroundListItem' onClick={this.handleClick}>
                  <p className='ListItemTitle'> {this.props.title} </p>
                  <p className='ListItemContent'> {this.props.content} </p>
                </div>);
+    }
+    renderExpanded(){
+        return(<div className='BackgroundListItem' onClick={this.handleClick}>
+                 <ListItemDetails information={this.props.adtionalInformation} title={this.props.title} content= {this.props.content} />
+               </div>);
+    }
+    render(){
+        return(this.state.expanded ? this.renderExpanded() : this.renderNormalState());
     }
 }
 
