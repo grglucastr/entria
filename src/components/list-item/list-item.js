@@ -10,7 +10,6 @@ class ListItem  extends Component{
     }
     handleClick = () => {
         this.setState({expanded : !this.state.expanded});
-        alert('You clicked a list Item ' +  this.props.adtionalInformation.date  );
     }
     renderNormalState(){
         return(<div className='BackgroundListItem' onClick={this.handleClick}>
